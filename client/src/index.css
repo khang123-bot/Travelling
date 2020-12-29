@@ -1,0 +1,271 @@
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body, 
+#root{
+  height: 100vh;
+  margin: 0;
+}
+body, input, select, textarea{
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grid-container{
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+a:hover{
+  color: #ff8000;
+  text-decoration: none;
+}
+header{
+  grid-area: header;
+  background-color: #203040;
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+}
+header a{
+  color: white;
+}
+header span a{
+  margin-left: 5rem;
+}
+main{
+  grid-area: main;
+}
+footer{
+  grid-area: footer;
+  background-color: #203040 ;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.main{
+  flex: 3 60rem;
+}
+.sidebar{
+  flex: 1 20rem;
+}
+
+
+/* Product */
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.products li{
+  flex: 1 1 29rem;
+  height: 47rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.product{
+  flex: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.product img{
+  max-width: 27rem;
+  max-height: 27rem;
+}
+.product-price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-price div,
+.product-price button{
+  text-align: center;
+  flex: 1;
+}
+.product-price div{
+  font-size: 2rem;
+}
+.product-price button{
+  padding: 1rem;
+  font-size: 2rem;
+  border: .1rem #c0c0c0 solid;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+.button:hover{
+  border: .2rem #808080 solid;
+}
+.button.primary{
+  background-color: #ffc000; 
+}
+img{
+  width: 40rem;
+  height: 20rem;
+}
+/* Filter */
+.filter{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: .1rem #c0c0c0 solid;
+}
+.filter div{
+  flex: 1
+}
+/*Cart*/
+.cart{
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+}
+
+.cart-header{
+  border-bottom: .1rem #c0c0c0 solid;
+}
+.cart-items{
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+}
+.cart-items img{
+  width: 20rem;
+
+}
+.cart-items li{
+  display: flex;
+}
+.cart-items li div{
+  padding: .5rem;
+}
+.cart-items li div:last-child{
+  flex: 1;
+}
+.right{
+  text-align: right;
+}
+.total{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.total > div, .total > button {
+  flex: 1;
+}
+.total > div {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+form{
+  width: 100%;
+}
+.form-container{
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+.form-container li{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+input{
+  padding: 1rem;
+  border: .1rem #c0c0c0 solid;
+}
+
+.product-detail{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  max-height: 96vh;
+}
+.product-detail img{
+  max-height: 100vh;
+  max-width: 46rem;
+  margin: 0 auto;
+}
+.product-detail-description{
+  flex: 1 1;
+  margin: 1rem;
+}
+.close-modal{
+  position: absolute;
+  right:1rem;
+  top: 2.5rem;
+  z-index:1000;
+} 
+/*about us*/
+h2{
+  text-align: center;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+/*User*/
+.user{
+  margin-left: 105rem;
+}
+.login{
+  margin-right: .5rem;
+} 
+.register{
+  margin-right: .5rem;
+}
+.visible{
+  display: none;
+}
+.username-header{
+  color: white;
+}
